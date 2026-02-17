@@ -139,6 +139,123 @@ html{font-size:14px;}.tab-content > .tab-pane,[class~=custom-radio] li input{dis
     opacity: 0;
   }
 }
+.banner {
+   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 140px 0 100px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: bgFade 15s infinite ease-in-out;
+}
+
+/* gradient overlay */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0.55)
+  );
+  z-index: 1;
+}
+
+/* keep content above overlay */
+.banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes bgFade {
+  0% {
+    background-image: url("/media/bags/still-life-say-no-fast-fashion.jpg");
+  }
+  33% {
+    background-image: url("/media/bags/bag-hanging-from-furniture-item-indoors.jpg");
+  }
+  66% {
+    background-image: url("/media/bags/Fast Fashion Concept with Woman.jpg");
+  }
+  100% {
+    background-image: url("/media/bags/3.jpeg");
+  }
+}
+/* CONTENT */
+/* CARD */
+.hero-card {
+  position: relative;
+  z-index: 2;
+
+  background: rgba(45, 30, 20, 0.45); /* THIS is the magic */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  padding: 60px 70px;
+  border-radius: 18px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+
+  animation: cardFloatIn 1.6s ease-out forwards;
+}
+
+/* TEXT */
+.subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+   color: rgba(210, 180, 140, 0.75); /* warm tan */
+
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 35px;
+
+      background: linear-gradient(
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,0.7)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* BUTTON */
+.btn-booknow {
+  display: inline-block;
+  padding: 14px 42px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #fff;
+  background: linear-gradient(135deg, #8b5a2b, #5a3a1e);
+  border-radius: 50px;
+  text-decoration: none;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  transition: all 0.35s ease;
+}
+
+.btn-booknow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65);
+}
 
 
 /*========================================================================
