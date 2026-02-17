@@ -5,11 +5,79 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Home Collection | Mojuri</title>
-		
-		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="media/mine/Gem Logo.png">
-		
+ <title>Home Collection | Temi's Collection</title>
+  <meta name="description" content="Temi's Collection offers a carefully curated range of home collection pieces. Discover unique, stylish finds for every home — shop now at Temi's Collection.">
+  <meta name="keywords" content="Temi's Collection, home collection, home decor, lifestyle, curated pieces, Nigerian fashion, online store, homeware, accessories, Fiyinfoluwa">
+  <meta name="author" content="Temi's Collection">
+  <link rel="canonical" href="https://temiscollection.vercel.app/">
+
+  <!-- ═══════════════════════════════════════════════
+       ROBOTS
+  ═══════════════════════════════════════════════ -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- ═══════════════════════════════════════════════
+       OPEN GRAPH (Facebook / LinkedIn / general)
+  ═══════════════════════════════════════════════ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Temi's Collection">
+  <meta property="og:title" content="Home Collection | Temi's Collection">
+  <meta property="og:description" content="Temi's Collection offers a carefully curated range of home collection pieces. Discover unique, stylish finds for every home — shop now at Temi's Collection.">
+  <meta property="og:url" content="https://temiscollection.vercel.app/">
+  <meta property="og:image" content="https://temiscollection.vercel.app/media/mine/Gem Logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Temi's Collection – curated home collection pieces">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ═══════════════════════════════════════════════
+       TWITTER / X CARD
+       summary_large_image = full-width preview in feed
+  ═══════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@d_fiyinfoluwa1">
+  <meta name="twitter:creator" content="@d_fiyinfoluwa1">
+  <meta name="twitter:title" content="Home Collection | Temi's Collection">
+  <meta name="twitter:description" content="Temi's Collection offers a carefully curated range of home collection pieces. Discover unique, stylish finds for every home — shop now.">
+  <meta name="twitter:image" content="https://temiscollection.vercel.app/media/mine/Gem Logo.png">
+  <meta name="twitter:image:alt" content="Temi's Collection – curated home collection pieces">
+
+  <!-- ═══════════════════════════════════════════════
+       SCHEMA.ORG – STRUCTURED DATA
+       Helps Google show rich results / knowledge panel
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Temi's Collection",
+    "url": "https://temiscollection.vercel.app",
+    "logo": "https://temiscollection.vercel.app/media/mine/Gem Logo.png",
+    "image": "https://temiscollection.vercel.app/media/mine/Gem Logo.png",
+    "description": "Temi's Collection offers a carefully curated range of home collection pieces — unique, stylish finds for every home.",
+    "sameAs": [
+      "https://twitter.com/d_fiyinfoluwa1",
+      "https://x.com/d_fiyinfoluwa1"
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       VERCEL / PERFORMANCE
+  ═══════════════════════════════════════════════ -->
+  <!-- Vercel Analytics – uncomment after enabling in your Vercel dashboard -->
+  <!-- <script defer src="/_vercel/insights/script.js"></script> -->
+
+  <!-- Mobile browser chrome colour -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ═══════════════════════════════════════════════
+       FAVICON + APPLE TOUCH
+  ═══════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="media/mine/Gem Logo.png">
+  <link rel="shortcut icon" type="image/png" href="media/mine/Gem Logo.png">
+  <link rel="apple-touch-icon" href="media/mine/Gem Logo.png">
 		<!-- Dependency Styles -->
 		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="libs/feather-font/css/iconfont.css" type="text/css">
@@ -1002,11 +1070,17 @@
 								<nav id="main-navigation">
 									<ul id="menu-main-menu" class="menu">
 										<li class="level-0 menu-item current-menu-item">
-											<a href="#"><span class="menu-item-text">Home</span></a>
+											<a href="#home"><span class="menu-item-text">Home</span></a>
 										</li>
 										<li class="level-0 menu-item">
-											<a href="#"><span class="menu-item-text">Shop</span></a>
+											<a href="#shop"><span class="menu-item-text">Shop</span></a>
 										</li>
+										<!-- <li class="level-0 menu-item">
+											<a href="#products"><span class="menu-item-text">Products</span></a>
+										</li>
+										<li class="level-0 menu-item">
+											<a href="#contact"><span class="menu-item-text">Contact</span></a>
+										</li> -->
 									</ul>
 								</nav>
 							</div>
@@ -1021,10 +1095,10 @@
 								<nav id="main-navigation">
 									<ul id="menu-main-menu" class="menu">
 										<li class="level-0 menu-item">
-											<a href="#"><span class="menu-item-text">Product</span></a>
+											<a href="#products"><span class="menu-item-text">Product</span></a>
 										</li>
 										<li class="level-0 menu-item">
-											<a href="#"><span class="menu-item-text">Contact</span></a>
+											<a href="#contact"><span class="menu-item-text">Contact</span></a>
 										</li>
 									</ul>
 								</nav>
@@ -1251,8 +1325,8 @@
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 </style>
-<section class="banner" id="home">
-  <div class="hero-card">
+<section class="banner" id="home" ">
+  <div class="hero-card" style="margin: 10px;">
     <h2 class="subtitle">HANDMADE LEATHER CRAFTSMANSHIP</h2>
     <h1 class="title">Made for You</h1>
   <a href="https://wa.me/2349036974306?text=Hello%20👋,%20I%20saw%20your%20shoe%20collection%20and%20I'm%20interested%20in%20buying.%20Please%20can%20you%20tell%20me%20more%20about%20the%20available%20styles,%20sizes,%20and%20prices?%20I%20would%20like%20to%20order%20a%20pair." 
@@ -1266,7 +1340,7 @@
 </section>
 
 
-						<section class="section section-padding m-b-70">
+						<section class="section section-padding m-b-70" >
 	<div class="section-container">
 		<!-- Block Intro (Layout 2) -->
 		<div class="block block-intro layout-2 text-center">
@@ -1285,7 +1359,7 @@
 	</div>	
 </section>
 
-<section class="section section-padding m-b-70">
+<section class="section section-padding m-b-70" id="shop">
 	<div class="section-container">
 		<!-- Block Banners (Layout 3) -->
 		<div class="block block-banners layout-3 banners-effect">
@@ -1407,7 +1481,7 @@
 		</div>
 	</div>
 </section>
-<section class="section section-padding top-border p-t-70 m-b-70">
+<section class="section section-padding top-border p-t-70 m-b-70" id="products">
 	<div class="section-container">
 		<!-- Block Product Categories -->
 		<div class="block block-product-cats slider round-border">
@@ -1525,7 +1599,7 @@
 	</div>
 </section>
 
-<section class="section section-padding m-b-70">
+<section class="section section-padding m-b-70" id="contact">
 	<div class="section-container">
 		<!-- Block Contact Us -->
 		<div class="block block-contact">
@@ -2465,141 +2539,141 @@
         let audioContext;
         let gainNode;
 
-        function initAudio() {
-            audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            gainNode = audioContext.createGain();
-            gainNode.connect(audioContext.destination);
-        }
+        // function initAudio() {
+        //     audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        //     gainNode = audioContext.createGain();
+        //     gainNode.connect(audioContext.destination);
+        // }
 
-        // Play elegant chime sound
-        function playChime(frequency, duration, delay = 0) {
-            setTimeout(() => {
-                if (!audioContext) initAudio();
+        // // Play elegant chime sound
+        // function playChime(frequency, duration, delay = 0) {
+        //     setTimeout(() => {
+        //         if (!audioContext) initAudio();
                 
-                const oscillator = audioContext.createOscillator();
-                const envelope = audioContext.createGain();
+        //         const oscillator = audioContext.createOscillator();
+        //         const envelope = audioContext.createGain();
                 
-                oscillator.connect(envelope);
-                envelope.connect(gainNode);
+        //         oscillator.connect(envelope);
+        //         envelope.connect(gainNode);
                 
-                oscillator.frequency.value = frequency;
-                oscillator.type = 'sine';
+        //         oscillator.frequency.value = frequency;
+        //         oscillator.type = 'sine';
                 
-                const now = audioContext.currentTime;
-                envelope.gain.setValueAtTime(0, now);
-                envelope.gain.linearRampToValueAtTime(0.15, now + 0.01);
-                envelope.gain.exponentialRampToValueAtTime(0.01, now + duration);
+        //         const now = audioContext.currentTime;
+        //         envelope.gain.setValueAtTime(0, now);
+        //         envelope.gain.linearRampToValueAtTime(0.15, now + 0.01);
+        //         envelope.gain.exponentialRampToValueAtTime(0.01, now + duration);
                 
-                oscillator.start(now);
-                oscillator.stop(now + duration);
-            }, delay);
-        }
+        //         oscillator.start(now);
+        //         oscillator.stop(now + duration);
+        //     }, delay);
+        // }
 
-        // Play soft whoosh sound for bag unfold
-        function playWhoosh(delay = 0) {
-            setTimeout(() => {
-                if (!audioContext) initAudio();
+        // // Play soft whoosh sound for bag unfold
+        // function playWhoosh(delay = 0) {
+        //     setTimeout(() => {
+        //         if (!audioContext) initAudio();
                 
-                const bufferSize = audioContext.sampleRate * 0.8;
-                const buffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
-                const data = buffer.getChannelData(0);
+        //         const bufferSize = audioContext.sampleRate * 0.8;
+        //         const buffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+        //         const data = buffer.getChannelData(0);
                 
-                for (let i = 0; i < bufferSize; i++) {
-                    const envelope = Math.exp(-i / (bufferSize * 0.3));
-                    data[i] = (Math.random() * 2 - 1) * envelope * 0.1;
-                }
+        //         for (let i = 0; i < bufferSize; i++) {
+        //             const envelope = Math.exp(-i / (bufferSize * 0.3));
+        //             data[i] = (Math.random() * 2 - 1) * envelope * 0.1;
+        //         }
                 
-                const noise = audioContext.createBufferSource();
-                const filter = audioContext.createBiquadFilter();
-                const envelope = audioContext.createGain();
+        //         const noise = audioContext.createBufferSource();
+        //         const filter = audioContext.createBiquadFilter();
+        //         const envelope = audioContext.createGain();
                 
-                noise.buffer = buffer;
-                filter.type = 'lowpass';
-                filter.frequency.value = 600;
+        //         noise.buffer = buffer;
+        //         filter.type = 'lowpass';
+        //         filter.frequency.value = 600;
                 
-                noise.connect(filter);
-                filter.connect(envelope);
-                envelope.connect(gainNode);
+        //         noise.connect(filter);
+        //         filter.connect(envelope);
+        //         envelope.connect(gainNode);
                 
-                const now = audioContext.currentTime;
-                envelope.gain.setValueAtTime(0, now);
-                envelope.gain.linearRampToValueAtTime(0.08, now + 0.2);
-                envelope.gain.exponentialRampToValueAtTime(0.01, now + 0.8);
+        //         const now = audioContext.currentTime;
+        //         envelope.gain.setValueAtTime(0, now);
+        //         envelope.gain.linearRampToValueAtTime(0.08, now + 0.2);
+        //         envelope.gain.exponentialRampToValueAtTime(0.01, now + 0.8);
                 
-                noise.start(now);
-                noise.stop(now + 0.8);
-            }, delay);
-        }
+        //         noise.start(now);
+        //         noise.stop(now + 0.8);
+        //     }, delay);
+        // }
 
-        // Play letter reveal sound
-        function playLetterSound(pitch, delay = 0) {
-            setTimeout(() => {
-                if (!audioContext) initAudio();
+        // // Play letter reveal sound
+        // function playLetterSound(pitch, delay = 0) {
+        //     setTimeout(() => {
+        //         if (!audioContext) initAudio();
                 
-                const oscillator = audioContext.createOscillator();
-                const envelope = audioContext.createGain();
+        //         const oscillator = audioContext.createOscillator();
+        //         const envelope = audioContext.createGain();
                 
-                oscillator.connect(envelope);
-                envelope.connect(gainNode);
+        //         oscillator.connect(envelope);
+        //         envelope.connect(gainNode);
                 
-                oscillator.frequency.value = pitch;
-                oscillator.type = 'triangle';
+        //         oscillator.frequency.value = pitch;
+        //         oscillator.type = 'triangle';
                 
-                const now = audioContext.currentTime;
-                envelope.gain.setValueAtTime(0, now);
-                envelope.gain.linearRampToValueAtTime(0.06, now + 0.01);
-                envelope.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+        //         const now = audioContext.currentTime;
+        //         envelope.gain.setValueAtTime(0, now);
+        //         envelope.gain.linearRampToValueAtTime(0.06, now + 0.01);
+        //         envelope.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
                 
-                oscillator.start(now);
-                oscillator.stop(now + 0.15);
-            }, delay);
-        }
+        //         oscillator.start(now);
+        //         oscillator.stop(now + 0.15);
+        //     }, delay);
+        // }
 
-        // Main audio sequence
-        function playAnimationAudio() {
-            // Bag unfold whoosh
-            playWhoosh(0);
+        // // Main audio sequence
+        // function playAnimationAudio() {
+        //     // Bag unfold whoosh
+        //     playWhoosh(0);
             
-            // Bag body reveal - low chime
-            playChime(261.63, 1.2, 800); // C4
+        //     // Bag body reveal - low chime
+        //     playChime(261.63, 1.2, 800); // C4
             
-            // Handle drawing - mid chime
-            playChime(329.63, 1.0, 1200); // E4
+        //     // Handle drawing - mid chime
+        //     playChime(329.63, 1.0, 1200); // E4
             
-            // Details appearing - soft chimes
-            playChime(392.00, 0.8, 2000); // G4
-            playChime(523.25, 0.6, 2400); // C5
+        //     // Details appearing - soft chimes
+        //     playChime(392.00, 0.8, 2000); // G4
+        //     playChime(523.25, 0.6, 2400); // C5
             
-            // Letter reveals - ascending tones for each letter
-            const letterPitches = [
-                523.25, // C5 - T
-                554.37, // C#5 - e
-                587.33, // D5 - m
-                622.25, // D#5 - i
-                659.25, // E5 - '
-                698.46, // F5 - s
-                739.99, // F#5 - (space)
-                783.99, // G5 - C
-                830.61, // G#5 - o
-                880.00, // A5 - l
-                932.33, // A#5 - l
-                987.77, // B5 - e
-                1046.50, // C6 - c
-                1108.73, // C#6 - t
-                1174.66, // D6 - i
-                1244.51, // D#6 - o
-                1318.51  // E6 - n
-            ];
+        //     // Letter reveals - ascending tones for each letter
+        //     const letterPitches = [
+        //         523.25, // C5 - T
+        //         554.37, // C#5 - e
+        //         587.33, // D5 - m
+        //         622.25, // D#5 - i
+        //         659.25, // E5 - '
+        //         698.46, // F5 - s
+        //         739.99, // F#5 - (space)
+        //         783.99, // G5 - C
+        //         830.61, // G#5 - o
+        //         880.00, // A5 - l
+        //         932.33, // A#5 - l
+        //         987.77, // B5 - e
+        //         1046.50, // C6 - c
+        //         1108.73, // C#6 - t
+        //         1174.66, // D6 - i
+        //         1244.51, // D#6 - o
+        //         1318.51  // E6 - n
+        //     ];
             
-            letterPitches.forEach((pitch, index) => {
-                playLetterSound(pitch, 3000 + (index * 80));
-            });
+        //     letterPitches.forEach((pitch, index) => {
+        //         playLetterSound(pitch, 3000 + (index * 80));
+        //     });
             
-            // Final flourish - soft chord
-            playChime(523.25, 1.5, 5200); // C5
-            playChime(659.25, 1.5, 5250); // E5
-            playChime(783.99, 1.5, 5300); // G5
-        }
+        //     // Final flourish - soft chord
+        //     playChime(523.25, 1.5, 5200); // C5
+        //     playChime(659.25, 1.5, 5250); // E5
+        //     playChime(783.99, 1.5, 5300); // G5
+        // }
 
         // Start audio on page load
         window.addEventListener('load', () => {
